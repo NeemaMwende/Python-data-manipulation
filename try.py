@@ -25,13 +25,18 @@ import re
 # else:
 #     print("Weak password!")
 
-def is_valid_email(email):
-    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-    return bool(re.match(pattern, email))
 
-def is_valid_phone(phone):
-    pattern = r'^07\d{8}$'  # Kenyan format: 07 followed by 8 digits
-    return bool(re.match(pattern, phone))
+# def is_valid_email(email):
+#     pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+#     return bool(re.match(pattern, email))
+# def is_valid_phone(phone):
+#     pattern = r'^07\d{8}$'  # Kenyan format: 07 followed by 8 digits
+#     return bool(re.match(pattern, phone))
+# print(is_valid_email("neema@gmail.com"))   # True
+# print(is_valid_phone("0712345678"))        # True
 
-print(is_valid_email("neema@gmail.com"))   # True
-print(is_valid_phone("0712345678"))        # True
+my_string = "H e l l o"
+my_string = my_string.replace("l", "L")
+my_string.strip()
+split_text = my_string.split(" ")
+print(split_text)
